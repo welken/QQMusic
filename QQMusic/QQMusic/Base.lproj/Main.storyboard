@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Playing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ZJMPlayingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eason.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pXq-nP-gxN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nND-hd-8fb" userLabel="顶部">
+                                <rect key="frame" x="0.0" y="20" width="600" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTe-7H-NNl" userLabel="返回">
+                                        <rect key="frame" x="20" y="30" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iUg-yE-TGd"/>
+                                            <constraint firstAttribute="width" constant="40" id="rei-y6-PSd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="miniplayer_btn_playlist_close"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-iI-j8o">
+                                        <rect key="frame" x="540" y="30" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="akX-Ha-hmr"/>
+                                            <constraint firstAttribute="width" constant="40" id="mAe-q3-SML"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="main_tab_more"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5Y-kx-u9z">
+                                        <rect key="frame" x="273" y="20" width="54" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pS-aO-Yav">
+                                        <rect key="frame" x="279" y="63" width="42" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ntu-iI-j8o" secondAttribute="trailing" constant="20" id="2eE-z8-Jgr"/>
+                                    <constraint firstItem="DTe-7H-NNl" firstAttribute="top" secondItem="nND-hd-8fb" secondAttribute="top" constant="30" id="6Wh-5V-RaE"/>
+                                    <constraint firstAttribute="bottom" secondItem="4pS-aO-Yav" secondAttribute="bottom" constant="20" id="TAC-f4-HIH"/>
+                                    <constraint firstItem="Ntu-iI-j8o" firstAttribute="top" secondItem="nND-hd-8fb" secondAttribute="top" constant="30" id="THj-vj-xAv"/>
+                                    <constraint firstAttribute="height" constant="100" id="U8u-0x-RuE"/>
+                                    <constraint firstItem="4pS-aO-Yav" firstAttribute="centerX" secondItem="nND-hd-8fb" secondAttribute="centerX" id="VGE-lc-3Gg"/>
+                                    <constraint firstItem="DTe-7H-NNl" firstAttribute="leading" secondItem="nND-hd-8fb" secondAttribute="leading" constant="20" id="WXK-Yw-xtV"/>
+                                    <constraint firstItem="O5Y-kx-u9z" firstAttribute="centerX" secondItem="nND-hd-8fb" secondAttribute="centerX" id="XHo-v1-ruC"/>
+                                    <constraint firstItem="O5Y-kx-u9z" firstAttribute="top" secondItem="nND-hd-8fb" secondAttribute="top" constant="20" id="ky9-Ud-scR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0I-CI-2JZ" userLabel="底部">
+                                <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc2-DH-TYK" userLabel="播放">
+                                        <rect key="frame" x="268" y="66" width="64" height="64"/>
+                                        <state key="normal" image="player_btn_play_normal"/>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-AC-KDw">
+                                        <rect key="frame" x="48" y="10" width="504" height="31"/>
+                                        <color key="tintColor" red="0.30196078431372547" green="0.72941176470588232" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-JS-JyR" userLabel="当前时间">
+                                        <rect key="frame" x="8" y="16" width="39" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-3e-sdk" userLabel="总时长">
+                                        <rect key="frame" x="553" y="16" width="39" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP6-8O-US0" userLabel="上一曲">
+                                        <rect key="frame" x="154" y="66" width="64" height="64"/>
+                                        <state key="normal" image="player_btn_pre_normal"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-4P-BFi" userLabel="下一曲">
+                                        <rect key="frame" x="382" y="66" width="64" height="64"/>
+                                        <state key="normal" image="player_btn_next_normal"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nfK-AC-KDw" firstAttribute="leading" secondItem="T0I-CI-2JZ" secondAttribute="leading" constant="50" id="GSR-uH-ug6"/>
+                                    <constraint firstItem="gBh-4P-BFi" firstAttribute="centerY" secondItem="Hc2-DH-TYK" secondAttribute="centerY" id="Lga-aa-wN7"/>
+                                    <constraint firstItem="GAm-JS-JyR" firstAttribute="leading" secondItem="T0I-CI-2JZ" secondAttribute="leading" constant="8" id="N7u-gd-r5v"/>
+                                    <constraint firstItem="gBh-4P-BFi" firstAttribute="leading" secondItem="Hc2-DH-TYK" secondAttribute="trailing" constant="50" id="P6g-H8-RFS"/>
+                                    <constraint firstAttribute="trailing" secondItem="nfK-AC-KDw" secondAttribute="trailing" constant="50" id="QBD-cg-qW0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hc2-DH-TYK" secondAttribute="bottom" constant="20" id="pMm-c5-hbJ"/>
+                                    <constraint firstItem="Hc2-DH-TYK" firstAttribute="leading" secondItem="jP6-8O-US0" secondAttribute="trailing" constant="50" id="qWh-2n-jqc"/>
+                                    <constraint firstItem="PkM-3e-sdk" firstAttribute="centerY" secondItem="nfK-AC-KDw" secondAttribute="centerY" id="qvI-CS-L0P"/>
+                                    <constraint firstAttribute="height" constant="150" id="rSe-sO-A5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="PkM-3e-sdk" secondAttribute="trailing" constant="8" id="t3N-3S-JiA"/>
+                                    <constraint firstItem="jP6-8O-US0" firstAttribute="centerY" secondItem="Hc2-DH-TYK" secondAttribute="centerY" id="tes-b7-rTV"/>
+                                    <constraint firstItem="Hc2-DH-TYK" firstAttribute="centerX" secondItem="T0I-CI-2JZ" secondAttribute="centerX" id="w8P-rl-Hw5"/>
+                                    <constraint firstItem="nfK-AC-KDw" firstAttribute="top" secondItem="T0I-CI-2JZ" secondAttribute="top" constant="10" id="x8f-t5-Rfr"/>
+                                    <constraint firstItem="GAm-JS-JyR" firstAttribute="centerY" secondItem="nfK-AC-KDw" secondAttribute="centerY" id="xKQ-vY-bcc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌词歌词歌词歌词" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGS-FR-ZcI">
+                                <rect key="frame" x="232" y="420" width="136" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eason.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-cx-BUn">
+                                <rect key="frame" x="180" y="150" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sEc-cx-BUn" secondAttribute="height" multiplier="1:1" id="NdU-d1-agh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sEc-cx-BUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0IV-7C-8Lv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T0I-CI-2JZ" secondAttribute="bottom" id="3td-2g-uZe"/>
+                            <constraint firstItem="zGS-FR-ZcI" firstAttribute="top" secondItem="sEc-cx-BUn" secondAttribute="bottom" constant="30" id="AKB-Wu-Rcr"/>
+                            <constraint firstAttribute="trailing" secondItem="T0I-CI-2JZ" secondAttribute="trailing" id="IVL-nd-EuJ"/>
+                            <constraint firstItem="nND-hd-8fb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MjI-fR-Uht"/>
+                            <constraint firstItem="zGS-FR-ZcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIy-Bu-Yan"/>
+                            <constraint firstItem="nND-hd-8fb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sjn-ZH-ZfE"/>
+                            <constraint firstItem="pXq-nP-gxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W3X-yh-tcu"/>
+                            <constraint firstItem="T0I-CI-2JZ" firstAttribute="top" secondItem="zGS-FR-ZcI" secondAttribute="bottom" constant="30" id="Xbo-4o-J6f"/>
+                            <constraint firstAttribute="trailing" secondItem="pXq-nP-gxN" secondAttribute="trailing" id="Xkd-he-YKf"/>
+                            <constraint firstAttribute="trailing" secondItem="nND-hd-8fb" secondAttribute="trailing" id="c6N-nb-933"/>
+                            <constraint firstItem="sEc-cx-BUn" firstAttribute="top" secondItem="nND-hd-8fb" secondAttribute="bottom" constant="30" id="hTW-tc-fo9"/>
+                            <constraint firstItem="T0I-CI-2JZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pgx-Xq-cRN"/>
+                            <constraint firstItem="pXq-nP-gxN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="poQ-Fc-43a"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="pXq-nP-gxN" secondAttribute="bottom" id="vew-IC-vlK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumView" destination="pXq-nP-gxN" id="tA7-Bv-PYo"/>
+                        <outlet property="iconView" destination="sEc-cx-BUn" id="VoT-46-Tcd"/>
+                        <outlet property="singerName" destination="4pS-aO-Yav" id="QoO-w4-UP9"/>
+                        <outlet property="slider" destination="nfK-AC-KDw" id="9Ie-zQ-GqI"/>
+                        <outlet property="songName" destination="O5Y-kx-u9z" id="GRO-0I-20w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eason.jpg" width="350" height="350"/>
+        <image name="main_tab_more" width="45" height="45"/>
+        <image name="miniplayer_btn_playlist_close" width="40" height="40"/>
+        <image name="player_btn_next_normal" width="64" height="64"/>
+        <image name="player_btn_play_normal" width="64" height="64"/>
+        <image name="player_btn_pre_normal" width="64" height="64"/>
+    </resources>
+</document>
